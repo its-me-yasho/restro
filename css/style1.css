@@ -52,6 +52,24 @@ ul{
 	list-style: none;
 }
 
+h1{
+	font-weight: 700;
+	color: var(--white);
+}
+
+h2{
+	font-weight: 600;
+	color: var(--white);
+}
+
+h3,
+h4,
+h5,
+h6{
+	font-weight: 500;
+	color: var(--white);
+}
+
 .container{
 	max-width : 1170px;
 	margin : auto;
@@ -252,4 +270,31 @@ ul{
 
 .about-text p{
 	margin: 0 0 15px;
+	color: var(--white-light);
+}
+
+.about-text .btn{
+	margin: 15px 0 0;
+}
+
+.about-img img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.about-img .img-box{
+	position: relative;
+}
+
+.about-img .img-box h3{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	max-width: 250px;
+	text-align: center;
+	transform: translate(-50%,-50%);
+	font-size: 30px;
+	font-family: var(--cursive-font);
+	color: var(--dark);
 }
