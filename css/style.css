@@ -309,3 +309,18 @@ h6{
 .home-text p{
 	margin: 0 0 30px;
 }
+
+/* responsive  */
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+	.home-text h1{
+		font-size: 50px;
+		line-height: 65px;
+	}
+}
+@media(max-width:575px){
+
+}

@@ -262,7 +262,7 @@ h6{
 /* about us section */
 
 .about-section{
-	background-color: var(--dark-light);
+	background-color: var(--dark);
 }
 
 .about-text,
@@ -325,6 +325,7 @@ h6{
 
 .menu-section{
 	background-color: var(--dark);
+	padding-bottom: 60px;
 }
 
 .menu-section .section-title{
@@ -347,7 +348,7 @@ h6{
 	font-weight: 500;
 	color: var(--white);
 	cursor: pointer;
-	margin: 0 0 10px;	
+	margin: 0 10px 10px;	
 	transition: color 0.3s ease;
 	display: inline-block;
 }
@@ -356,23 +357,52 @@ h6{
 	color: var(--main-color);
 }
 
+.menu-tab-content{
+	display: none;
+}
+
+.menu-tab-content.active{
+	display: flex;
+}
+
 .menu-item{
 	width: 50%;
 	padding: 20px 15px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
+}
+
+.menu-item::after{
+	content: '';
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	border-bottom: 2px dashed var(--main-color);
+}
+
+.menu-item:nth-last-of-type(2)::after,
+.menu-item:nth-last-of-type(1)::after{
+	border: none;	
 }
 
 .menu-item-title{
 	display: flex;
 	align-items: center;
+	max-width: calc(100% - 80px);
 }
 
 .menu-item-title h3{
 	font-size: 16px;
 	text-transform: capitalize;
 	transition: color 0.3s ease;
+}
+
+.menu-item:hover .menu-item-title h3{
+	color: var(--main-color);
+
 }
 
 .menu-item-title img{
@@ -385,5 +415,36 @@ h6{
 	font-weight: 500;
 	color: var(--main-color);
 	transition: color 0.3s ease;
+}
+
+.menu-item:hover .menu-item-price{
+	color: var(--white);
+}
+
+/* responsive */
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+	.menu-item,
+	.about-text,
+	.about-img{
+		width: 100%;
+	}
+
+	.menu-item:nth-last-of-type(2):after{
+		border-bottom: 2px dashed var(--main-color);
+		
+	}
+
+	.about-img{
+		margin-top: 40px;
+	}
+
+	.about-text h3{
+		font-size: 24px;
+	}
+}
+@media(max-width:575px){
 
 }
