@@ -262,7 +262,7 @@ h6{
 /* about us section */
 
 .about-section{
-	background-color: var(--dark);
+	background-color: transparent;
 }
 
 .about-text,
