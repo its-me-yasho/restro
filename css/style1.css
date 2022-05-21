@@ -322,6 +322,11 @@ h6{
 }
 
 
+.about-img .pay-img{
+	width: 70%;
+	border-radius: 10px;
+}
+
 /* our menu section */
 
 .menu-section{
