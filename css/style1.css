@@ -262,7 +262,7 @@ h6{
 /* about us section */
 
 .about-section{
-	background-color: transparent;
+	background-color: var(--dark);
 }
 
 .about-text,
@@ -320,6 +320,7 @@ h6{
 	font-weight: bold;
 	text-transform: capitalize;
 }
+
 
 /* our menu section */
 
