@@ -369,6 +369,7 @@ h6{
 
 .menu-tab-content{
 	display: none;
+	padding-bottom: 40px;
 }
 
 .menu-tab-content.active{
@@ -512,8 +513,9 @@ h6{
 }
 
 .cart-total {
-    margin-top: 10px;
+    margin-top: 25px;
     margin-right: 10px;
+	padding-bottom: 40px;
 }
 
 .cart-total-title {
@@ -523,9 +525,11 @@ h6{
     margin-right: 20px;
 }
 
-.cart-total-price {
+.cart-total-price,
+.total-price{
     color: var(--main-color);
-    font-size: 1.1em;
+    font-size: 2.1em;
+	font-weight: bold;
 }
 
 .cart-quantity .btn {

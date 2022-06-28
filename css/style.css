@@ -81,6 +81,7 @@ h6{
 .row{
 	display : flex;
 	flex-wrap : wrap;
+	padding-bottom: 40px;
 }
 
 .justify-content-between{
@@ -139,7 +140,7 @@ h6{
 	width: 100%;
 }
 
-.header::before{
+/* .header::before{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -151,7 +152,7 @@ h6{
 	z-index: -1;
 	transition: transform 0.5s ease;
 	transform: translateY(-100%);
-}
+} */
 
 .header.sticky::before{
 	transform: translateY(0%);
@@ -308,21 +309,16 @@ h6{
 
 }
 @media(max-width:767px){
-	.home-text h1{
-		font-size: 50px;
-		line-height: 65px;
-	}
-
-	.about-text,
-	.about-img{
+	.row .about-text,
+	.row .about-img{
 		width: 100%;
 	}
 
-	.about-img{
+	.row .about-img{
 		margin-top: 40px;
 	}
 
-	.about-text h3{
+	.row .about-text h3{
 		font-size: 24px;
 	}
 }
