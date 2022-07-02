@@ -140,19 +140,6 @@ h6{
 	width: 100%;
 }
 
-/* .header::before{
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: var(--dark-light);
-	box-shadow:var(--shadow);
-	z-index: -1;
-	transition: transform 0.5s ease;
-	transform: translateY(-100%);
-} */
 
 .header.sticky::before{
 	transform: translateY(0%);
