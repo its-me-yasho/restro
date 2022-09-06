@@ -23,16 +23,6 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-}
-
-function purchaseClicked() {
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal()
 }
 
 function removeCartItem(event) {
@@ -121,12 +111,14 @@ document.addEventListener("click", function(e){
 const menuTabs = document.querySelector(".menu-tabs");
 menuTabs.addEventListener("click", function(e){
 	if(e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")){
-		const target = e.target.getAttribute("data-target");
 		menuTabs.querySelector(".active").classList.remove("active");
 		e.target.classList.add("active");
+
 		const menuSection= document.querySelector(".menu-section");
 		menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
-		menuSection.querySelector(target).classList.add("active");
+		
+        const target1 = e.target.getAttribute("data-target");
+        menuSection.querySelector(target1).classList.add("active");
 	}
 });
 
