@@ -74,8 +74,8 @@ h6{
 
 .container{
 	max-width : 1170px;
-	margin : auto;
-	
+	margin: auto;
+	text-align: center;
 }
 
 .row{
@@ -247,6 +247,10 @@ h6{
 .home-section{
 	position: relative;
 	overflow: hidden;
+	text-align: center;
+	padding-left: 25%;
+	padding-right: 25%;
+
 }
 
 .home-section::before{
@@ -276,12 +280,9 @@ h6{
 }
 
 .home-section .min-vh-100{
-	padding: 100px 0;
+	padding: 80px 0;
 }
 
-.home-text{
-	text-align: center;
-}
 
 .home-text h1{
 	font-family: var(--cursive-font);
@@ -293,16 +294,13 @@ h6{
 /* responsive  */
 
 @media(max-width:991px){
-
-}
-@media(max-width:767px){
-	.row .about-text,
-	.row .about-img{
+	.row .about-text{
 		width: 100%;
 	}
-
-	.row .about-img{
-		margin-top: 40px;
+}
+@media(max-width:767px){
+	.row .about-text{
+		width: 100%;
 	}
 
 	.row .about-text h3{
@@ -313,9 +311,7 @@ h6{
 
 }
 
-.about-text,
-.about-img{
-	width: 50%;
+.about-text{
 	padding: 0 15px;
 }
 
@@ -336,11 +332,14 @@ h6{
 	
 }
 
+
 .about-text h2{
 	font-size: 38px;
-	color: var(--main-color);
+	color: var(--white-light);
 	font-family: var(--cursive-font);
 	font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 10%;
 } 
 
 .about-img img{
